@@ -48,8 +48,9 @@ h1{font-size:40px;font-weight:400;letter-spacing:.12em;line-height:1.25}
 
 /* 작품 상세 */
 .work{padding-top:26px}
-.work .big{text-align:center;margin:18px 0 30px}
-.work .big img{max-width:100%;height:auto}
+.work .big{text-align:center;margin:16px 0 26px}
+.work .big img{max-width:100%;height:auto;max-height:46vh;width:auto}
+@media(min-width:760px){.work .big img{max-height:none}}
 .work h2{font-size:26px;font-weight:600;letter-spacing:.01em}
 .work h2 i{font-style:normal;font-size:14px;color:var(--mute);margin-left:9px}
 .work .spec{font-size:12.5px;color:var(--mute);margin-top:6px;letter-spacing:.02em}
@@ -80,11 +81,12 @@ body{position:relative}
 .en .w p{font-size:14.5px;line-height:1.85;color:var(--body);margin-top:12px}
 
 /* 음성 해설 */
-.au{margin-top:24px;padding:14px 16px;border:1px solid var(--line);
- border-radius:3px;background:#fff}
-.au .lb{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10px;
- letter-spacing:.2em;color:var(--mute);margin-bottom:9px}
-.au audio{width:100%;height:34px;display:block}
+.au{margin-top:22px;padding:13px 15px 15px;border:1px solid #D6D5CB;
+ border-radius:4px;background:#fff}
+.au .lb{font-size:12px;letter-spacing:.02em;color:var(--body);margin-bottom:9px;
+ display:flex;align-items:center;gap:7px}
+.au .lb svg{flex:0 0 auto}
+.au audio{width:100%;height:38px;display:block}
 
 /* 안내 */
 dl.info{margin-top:22px;font-size:14px}
@@ -107,9 +109,9 @@ footer{margin:64px 0 56px;font-size:12px;color:var(--mute);line-height:1.9}
  <div class="big"><img src="img/w03.jpg" alt="서울의 봄"></div>
  <h2>서울의 봄</h2>
  <div class="spec">2024 · 장지에 채색 · 120×120cm</div>
+ <div class="au"><div class="lb"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#6A6A62" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>음성 해설</div><audio controls preload="none" src="audio/03.mp3"></audio></div>
  <div class="poem">따스한 봄… 시냇물소리…<br>동서남북 어디든 즐거움이 가득하다</div>
  <div class="desc">서울관광지도에 나오는 경복궁, 창경궁, 종묘 등을 각색하여 작가의 시점으로 표현한 작품이다.</div>
- <div class="au"><div class="lb">AUDIO GUIDE</div><audio controls preload="none" src="audio/03.mp3"></audio></div>
  <div class="nav"><a href="w02.html">이전<b>무릉계곡</b></a><a href="w04.html" style="text-align:right">다음<b>봉정암</b></a></div>
  <footer>休遊山水 — 마음, 쉬고 노닐다 · 이유리<br>
   2026. 10. 14 (수) – 10. 19 (월) · 인사아트센터 3층 제1특별관</footer>
